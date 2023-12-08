@@ -17,4 +17,13 @@ public class CountryService {
                 .map(countryObj -> objectMapper.convertValue(countryObj, Country.class))
                 .collect(Collectors.toList());
     }
+
+    public Country cleanCountryData(Object[] country) {
+        ObjectMapper objectMapper = new ObjectMapper();
+
+        return Arrays.stream(country)
+                .map(countryObj -> objectMapper.convertValue(countryObj, Country.class))
+                .toList()
+                .get(0);
+    }
 }

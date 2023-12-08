@@ -11,3 +11,9 @@ that IDEA itself used:
 
 - Java 17
 - Spring Boot 3.2.0
+
+## Usage
+
+## Roadmap
+
+- Add a root element "countries" to the list of countries fetched from /countries
